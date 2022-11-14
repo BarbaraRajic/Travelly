@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif; /*Google fonts*/
+  font-family: "Poppins", sans-serif;
 }
 
 h1 {
@@ -81,7 +81,7 @@ nav {
 
 #logo {
   flex: 2 1 40rem;
-  font-family: "Pattaya", sans-serif; /*Google fonts*/
+  font-family: "Pattaya", sans-serif;
   font-weight: 400;
 }
 
@@ -128,7 +128,7 @@ nav {
   display: flex;
   align-items: center;
   position: relative; /*Add position to place cloud*/
-  overflow: hidden; /*CloudAnimation fidden when go out of the section*/
+  overflow: hidden; /*CloudAnimation hidden when go out of the section*/
 }
 
 .locations-head {
@@ -205,6 +205,17 @@ nav {
   align-items: center;
 }
 
+.card:hover {
+  animation: shake 1s ease-out;
+  animation-iteration-count: 1;
+}
+
+@keyframes shake {
+  from {transform: rotate(0deg);}
+  50% {transform: rotate(-2deg);}
+  to { transform: rotate(0deg); }
+}
+
 .cards img {
   background: white;
   height: 10rem;
@@ -271,7 +282,7 @@ nav {
 
 footer {
   background: #131c27;
-  color: white;
+  color: black;
 }
 
 .footer-wrapper {
